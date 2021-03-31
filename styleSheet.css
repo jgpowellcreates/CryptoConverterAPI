@@ -1,0 +1,172 @@
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Teko', sans-serif;
+ */
+
+body {
+    background-image:
+    linear-gradient(to bottom, rgba(184, 123, 241, 0.32), rgba(0, 32, 119, 0.95)),
+    url('assets/daytradeBG.jpeg');
+    /* background: url("assets/daytradeBG.jpeg") center no-repeat; */
+    background-size:cover;
+    height: 110vh;
+    text-align: center;
+}
+
+@media (max-width: 950px) {
+    body h1 {
+        font-family: 'Teko', sans-serif;
+        font-weight: 700;
+        font-size: 3em;
+        margin: .7em 0 .2em 0;
+        color: white;
+    }
+
+    body h2 {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+    }    
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0em auto;
+    }
+
+    .currInputs {
+        width: 80%;
+        margin: auto;
+    }
+
+    #convertBtn {
+        margin: 1em;
+        font-size: 1em;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        padding-top: 5px;
+    }
+
+    footer {
+        white-space:nowrap;
+        overflow: hidden;
+        font-size: .8em;
+    }
+}
+
+@media only screen and (min-width: 951px) {
+    body h1 {
+        font-family: 'Teko', sans-serif;
+        font-weight: 700;
+        font-size: 8em;
+        padding: 0;
+        margin: .3em 0 0em 0;
+        color: white;
+    }
+        
+    body h2{
+        font-family: 'Open Sans', sans-serif;
+        padding: 0;
+        color: white;
+    }
+
+    .currInputs {
+        width: 50%;
+    }
+    
+    #convertBtn {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5em;
+        padding-top: 5px;
+    }
+}
+
+body h2 {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.068) 0%, rgba(0, 0, 0, 0.404) 100%);
+    border-radius: 10px;
+    padding: 3px 5px;
+    width:fit-content;
+    margin: 0 auto .5em auto;
+}
+
+form {
+    display: flex;
+}
+
+#convertBtn {
+    font-family: 'Teko', sans-serif;
+    font-weight: 700;
+    letter-spacing: .1em;
+    padding: 3px 10px;
+}
+
+#resultSection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.currencyTitle {
+    background-image: linear-gradient(to bottom, rgba(75, 119, 88, 0.212), rgba(50, 167, 75, 0.73));
+    border-radius: 15px;
+    width:70%;
+    margin: auto;
+
+    font-family: 'Teko', sans-serif;
+    font-weight: 700;
+    letter-spacing: .1em;
+    font-size: 2em;
+    color: white;
+}
+
+.leftCol {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(251, 249, 76, 0));
+    width: 40%;
+    height: fit-content;
+    border-radius: 25px;
+}
+
+#cryptoIcon {
+    background-size:contain;
+    width: 80%;
+    padding-top: 40%;
+    padding-bottom: 40%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.rightCol {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(108, 233, 227, 0));
+    width: 40%;
+    height: fit-content;
+    border-radius: 25px;
+}
+
+#fiatIcon {
+    background-size: contain;
+    width: 80%;
+    padding-top: 40%;
+    padding-bottom: 40%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.convertAmt {
+    position: relative;
+    top: -2em;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6182336182336182) 100%);
+    border-radius: 10px;
+    margin: 0 0;
+    padding: 3px 0px;
+}
